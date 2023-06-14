@@ -99,3 +99,6 @@ sudo docker-compose up -d
 		</tr>
 	</tbody>
 </table>
+
+### Paypal
+* [Paypal](https://paypal.me/zhangchunsheng)
