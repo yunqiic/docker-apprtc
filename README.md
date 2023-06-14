@@ -5,6 +5,7 @@
 * [Get Template Project](#get-template-project)
 * [Change Config](#change-onfig)
 * [Start](#start)
+* [Enjoy](#enjoy)
 
 ----
 
@@ -30,6 +31,7 @@ git clone git@github.com:yunqiic/docker-apprtc.git
 ### .env
 * change PUBLIC_IP to your public ip
 
+>
 - PUBLIC_IP
 
 ### constants.py in config dir
