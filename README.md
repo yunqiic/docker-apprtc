@@ -6,6 +6,7 @@
 * [Change Config](#change-onfig)
 * [Start](#start)
 * [Enjoy](#enjoy)
+* [Donate](#donate)
 
 ----
 
@@ -75,3 +76,26 @@ sudo docker-compose up -d
 
 ## Enjoy
 * enjoy it by your url, like https://yourdomain.com. The url should be configured in the nginx.conf.
+
+----
+
+## Donate
+
+<table border="0">
+	<tbody>
+	    <tr>
+	        <td>支付宝</td>
+	        <td>微信</td>
+	    </tr>
+		<tr>
+			<td align="left" valign="middle">
+                <!--<img height="120" src="https://wx4.sinaimg.cn/mw690/46b94231ly1ge0okee0fej20ec0e6gp3.jpg">-->
+                <img height="120" src="https://ride-group.gitee.io/amapjava/images/alipay.jpeg">
+			</td>
+			<td align="center" valign="middle">
+				<!--<img height="120" src="https://wx4.sinaimg.cn/mw690/46b94231ly1ge0okecldyj20e80e8n0c.jpg">-->
+				<img height="120" src="https://ride-group.gitee.io/amapjava/images/wechat.jpeg">
+			</td>
+		</tr>
+	</tbody>
+</table>
