@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  apprtc-server:
+    image: yiluxiangbei/apprtc-server:v2
+    container_name: apprtc-server
+    restart: always
+    env_file: .env
+    ports:
+      - "8080:8080"
+      - "8089:8089"
+      - "3478:3478"
+      - "3478:3478/udp"
+      - "3033:3033"
+    expose:
+      - "59000-65000"
+    volumes:
+      - ./config:/apprtc_configs
+      - ./log:/log
+      - ./log_turn:/var/log/turn
+      - /etc/localtime:/etc/localtime
+
+  apprtc-web:
+    depends_on:
+      - apprtc-server
+    image: nginx:1.15.12-alpine
+    container_name: apprtc-web
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+      - "441:441"
+    volumes:
+      - /cert/yourdomain.com:/cert # see ssl_certificate, ssl_certificate_key config in nginx.conf under nginx-conf dir. make sure you have the file
+      - ./nginx-conf:/etc/nginx/conf.d
+      - /etc/localtime:/etc/localtime
