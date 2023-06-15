@@ -22,7 +22,7 @@
 * clone the docker-apprtc project
 
 ```
-git clone git@github.com:yunqiic/docker-apprtc.git
+git clone https://github.com/yunqiic/docker-apprtc.git
 ```
 
 ----
