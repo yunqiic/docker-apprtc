@@ -92,6 +92,7 @@ volumes:
 
 #### example
 * If you change the `/cert` behind `:`, you need to change the nginx.conf too.
+* make sure the host path `/etc/letsencrypt/yourdomain.com` is not the symbolic links
 
 ```yaml
 volumes:
