@@ -90,6 +90,13 @@ volumes:
     - /cert/yourdomain.com:/cert # see ssl_certificate, ssl_certificate_key config in nginx.conf under nginx-conf dir. make sure you have the file
 ```
 
+example
+
+```yaml
+volumes:
+    - /etc/letsencrypt/yourdomain.com:/cert # see ssl_certificate, ssl_certificate_key config in nginx.conf under nginx-conf dir. make sure you have the file
+```
+
 ----
 
 ## Start
