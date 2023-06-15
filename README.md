@@ -60,6 +60,7 @@ server_name yourdomain.com www.yourdomain.com;
 
 ### docker-compose.yml
 * change the volumns config `/cert/yourdomain.com:/cert`. The path `/cert/yourdomain.com` and certs file should exist in your host machine, and the certs file'name should be as the same as ssl_certificate, ssl_certificate_key config in the nginx.conf
+* `/cert/yourdomain.com` is the host path
 
 ```yaml
 volumes:
