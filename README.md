@@ -48,7 +48,7 @@ WSS_INSTANCE_HOST_KEY: 'yourdoamin.com'
 
 ### nginx.conf in nginx-conf dir
 * change the server_name to your domain
-* You can the ssl_certificate config if you like, but you should make sure that you have the file. You can check the file path in docker-compose.yml
+* You can update the ssl_certificate config if you like, but you should make sure that you have the file. You can check the file path in docker-compose.yml
 * The path in nginx.conf should be the container path, not the host path.
 
 ```
