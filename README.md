@@ -58,6 +58,29 @@ ssl_certificate_key /cert/privkey.pem;
 server_name yourdomain.com www.yourdomain.com;
 ```
 
+* change `randomcalling` to the url path you want to visit, like https://yourdomain.dom/randomcalling
+* There are two `randomcalling` you need to update.
+
+```
+# https://yourdomain.dom/randomcalling
+location /randomcalling {
+    # 转向代理的地址
+    proxy_pass http://roomserver;
+    proxy_redirect    off;
+    proxy_set_header Host $host;
+    rewrite ^/randomcalling(.*) /$1 break;
+}
+
+# https://yourdomain.dom/randomcalling1
+location /randomcalling1 {
+    # 转向代理的地址
+    proxy_pass http://roomserver;
+    proxy_redirect    off;
+    proxy_set_header Host $host;
+    rewrite ^/randomcalling1(.*) /$1 break;
+}
+```
+
 ### docker-compose.yml
 * change the volumns config `/cert/yourdomain.com:/cert`. The path `/cert/yourdomain.com` and certs file should exist in your host machine, and the certs file'name should be as the same as ssl_certificate, ssl_certificate_key config in the nginx.conf
 * `/cert/yourdomain.com` is the host path
