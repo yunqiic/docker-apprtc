@@ -90,7 +90,8 @@ volumes:
     - /cert/yourdomain.com:/cert # see ssl_certificate, ssl_certificate_key config in nginx.conf under nginx-conf dir. make sure you have the file
 ```
 
-example
+#### example
+* If you change the `/cert` behind `:`, you need to change the nginx.conf too.
 
 ```yaml
 volumes:
