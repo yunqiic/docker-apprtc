@@ -58,7 +58,7 @@ ssl_certificate_key /cert/privkey.pem;
 server_name yourdomain.com www.yourdomain.com;
 ```
 
-* change `randomcalling` to the url path you want to visit, like https://yourdomain.dom/randomcalling
+* The `randomcalling` is the url path you want to visit, like https://yourdomain.dom/randomcalling
 * There are two `randomcalling` you need to update.
 
 ```
