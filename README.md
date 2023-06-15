@@ -15,6 +15,7 @@
 2. Install docker-compose
 3. domain
 4. certs for domain
+5. make sure that there is no nginx running
 
 ----
 
@@ -70,6 +71,12 @@ volumes:
 
 ```
 sudo docker-compose up -d
+
+# check the service
+sudo docker-compose ps
+
+# check the log
+sudo docker-compose logs -f
 ```
 
 ----
