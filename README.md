@@ -29,6 +29,10 @@ git clone https://github.com/yunqiic/docker-apprtc.git
 ----
 
 ## Change Config
+1. .env
+2. constants.py
+3. nginx.conf
+4. docker-compose.yml
 
 ### .env
 * change PUBLIC_IP to your public ip
