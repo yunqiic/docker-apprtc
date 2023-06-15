@@ -3,7 +3,7 @@
 #### Table of Contents
 * [Prepare](#Prepare)
 * [Get Template Project](#get-template-project)
-* [Change Config](#change-onfig)
+* [Change Config](#change-config)
 * [Start](#start)
 * [Enjoy](#enjoy)
 * [Donate](#donate)
@@ -29,10 +29,6 @@ git clone https://github.com/yunqiic/docker-apprtc.git
 ----
 
 ## Change Config
-1. .env
-2. constants.py
-3. nginx.conf
-4. docker-compose.yml
 
 ### .env
 * change PUBLIC_IP to your public ip
